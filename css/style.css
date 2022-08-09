@@ -1,0 +1,88 @@
+/*
+Colors used:
+Dark rose-pink: #69373F;
+Pink: #B47878;
+Cream: #FFE5D8;
+Light grey: #FFF0E9
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img.logo {
+  width: 80px;
+  height: 80px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #B47878;
+  text-decoration: none; /* no underlining */
+}
+
+a:hover {
+  color: #FFE5D8;
+  text-decoration: underline; /* underlining when hovering over a link */
+}
+
+.button {
+  display: inline-block;
+  background-color: #B47878;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #B47878;
+  text-transform: uppercase;
+  border: 2px solid #B47878;
+}
+
+.button.contact:hover {
+  background-color: #B47878;
+  color: #ffffff;
+}
