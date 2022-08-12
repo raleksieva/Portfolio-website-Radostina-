@@ -20,28 +20,31 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 500;
-}
-
-h2 {
   font-size: 2.25em;
   font-weight: 500;
 }
 
-h3 {
+h2 {
   font-size: 1.75em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.25em;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 0.75em;
   font-weight: 400;
 }
 
 img.logo {
   width: 80px;
-  height: 80px;
+}
+
+img.profile {
+  width: 150px;
 }
 
 img {
