@@ -6,6 +6,17 @@ Cream: #FFE5D8;
 Light grey: #FFF0E9
 */
 
+header {
+  background-color: #FFF0E9;
+  padding: 10px;
+}
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
@@ -133,4 +144,13 @@ a:active {
 .button.contact:active {
   background-color: #69373F;
   color: #ffffff;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
