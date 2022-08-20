@@ -10,7 +10,7 @@ Light grey: #FFF0E9
 header {
   background-color: #FFF0E9;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 nav > ul {
@@ -31,7 +31,7 @@ nav > ul > li > a {
 /* Layout Styling */
 
 .container {
-  padding: 12px 25px;
+  padding: 0 25px;
 }
 
 .row {
@@ -42,6 +42,12 @@ nav > ul > li > a {
   max-width: 150px;
   padding-top: 25px;
 }
+
+.story {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
 
 body {
   background-color: #ffffff;
@@ -56,11 +62,18 @@ main{
   padding-top: 25px;
 }
 
+#hero span {
+  display: block;
+  font-size: 80%;
+  margin-top: 1em;
+}
+
 #hero h1 {
   text-align: center;
   margin: 0;
   padding: 0.67em 0;
 }
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -69,6 +82,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2em;
   font-weight: 400;
+  text-align: center;
 }
 
 h2 {
@@ -88,11 +102,14 @@ h4 {
 }
 
 img.logo {
-  max-width: 125px;
+  max-width: 50px;
 }
 
 img.profile {
-  width: 150px;
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img.colors {
@@ -198,11 +215,22 @@ a:active {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .wireframes {
   max-width: 225px;
   padding: 12px 12px 12px 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.screenshots {
+  display: flex;
+  overflow: scroll;
 }
 
 footer {
@@ -215,7 +243,7 @@ footer {
 
 /* Breakpoint Medium Devices */
 @media only screen and (min-width: 640px) {
-  
+
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -231,14 +259,65 @@ footer {
     display: block;
   }
 
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }
+
 }
 
 /* Breakpoint Large Devices 1024px or larger */
 @media only screen and (min-width: 1024px) {
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 }
 
 /* Breakpoint X-Large Devices 1440px or larger */
 @media only screen and (min-width: 1440px) {
 
+}
+
+
+@keyframes color-change {
+  0% {fill: #EDC655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
