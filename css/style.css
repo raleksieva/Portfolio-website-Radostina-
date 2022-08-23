@@ -31,6 +31,14 @@ nav > ul > li > a {
   font-weight: 500;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
@@ -42,16 +50,9 @@ nav > ul > li > a {
 }
 
 .navtoggle.responsive li:last-child {
-  padding: 0 0 10px; 
+  padding: 0 0 10px;
 }
 
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
 
 .navtoggle li .icon {
   position: absolute;
