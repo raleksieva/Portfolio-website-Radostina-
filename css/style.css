@@ -70,8 +70,8 @@ nav > ul > li > a {
 }
 
 .row {
-  margin: 40px 0;
-  padding: 20px 0 60px;
+  margin: 20px 0;
+  padding: 20px 0 40px;
 }
 
 .social {
@@ -384,5 +384,11 @@ footer {
 
   .story .container {
     max-width: 900px;
+  }
+
+  .story h2 {
+    padding: 25px;
+    margin: 0;
+  }
   }
 }
