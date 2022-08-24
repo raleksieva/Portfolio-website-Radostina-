@@ -12,6 +12,7 @@ Light grey: #FFF0E9
 
 header {
   background-color: #fff0e9;
+  box-shadow: 0 1px 9px 0 rgba(50, 50, 50, 0.25);
 
   /* text-align: center; */
   padding: 10px 0;
@@ -239,7 +240,7 @@ a:active {
   margin-bottom: 25px;
   background-color: transparent;
   color: #a86363;
-  border: 2px solid #b47878;
+  border: 2px solid #a86363;
 }
 
 .button.contact:visited {
@@ -251,7 +252,7 @@ a:active {
 
 .button.contact:hover,
 .button.contact:focus {
-  background-color: #b47878;
+  background-color: #a86363;
   color: #fff;
 }
 
